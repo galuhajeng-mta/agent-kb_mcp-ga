@@ -1,0 +1,61 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env/
+
+# Environment variables
+.env
+.envrc
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDEs & editors
+.idea/
+.vscode/
+.ruff_cache/
+
+# Jupyter / experiments
+.ipynb_checkpoints/
+*.ipynb
+experimentation/
+development/
+
+# Logs & reports
+*.log
+.coverage
+coverage.xml
+
+# Type checking
+.mypy_cache/
+
+# OS files
+.DS_Store
+*.swp
+*~
+
+# Docs build
+docs/_build/
+
+# App data (IMPORTANT)
+app/data/
+app/data/dbdata/
+central-memory-data/
+temp/
+
+# Ignore specific scripts
+remote.sh
+buildkitd.toml
+
+# Cline
+.clineignore

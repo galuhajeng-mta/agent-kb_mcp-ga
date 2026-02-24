@@ -1,0 +1,15 @@
+# TODO
+- video prompt usage for eval, prompt retrieval
+- usage AI microservice comms
+- knowldege graph obsidian
+- cascading user auth
+- active memory, in-memory context, qdrant with TTL caching
+- find and read file
+- read multiple files
+- full text search
+- semantic search
+- metadata search
+- unit and integration tests
+- CI/CD pipeline
+- temporal graph
+- find in file

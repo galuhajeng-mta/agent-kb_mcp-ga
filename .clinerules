@@ -1,0 +1,41 @@
+# Custom Rules
+
+You are an expert software engineer. Your memory resets completely between sessions, making precise, up-to-date documentation your absolute lifeline.
+
+---
+
+## Codebase
+Use central-memory MCP to get and update codebase with the following boilerplate
+directory: codebase/central-memory
+filename: <filename>
+
+Important files:
+- project-brief
+This is the foundational document, defining core requirements, goals, and the ultimate source of truth for project scope.
+
+- active-context
+This section outlines your current work focus, recent changes, and next steps. It includes active decisions, important patterns, and project insights.
+
+- progress
+This covers what works, what's left to build, the current status of the project, and any known issues. It tracks the evolution of project decisions.
+
+- api-contract
+This covers what's the api-contract for this project in human-readable format
+
+---
+
+### Commands:
+Use central-memory MCP to get specific instruction if user initiated certain command
+Use the following boilerplate to read the instruction
+- function: read_memory
+- directory: instruct-horizon
+- filename: <command_file>
+
+#### /create <optional: version> 
+- filename: create-release 
+
+#### /update-contract
+- filename: update-contract
+
+#### /changelog create
+- filename: create-changelog

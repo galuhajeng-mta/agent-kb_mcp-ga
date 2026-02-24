@@ -1,0 +1,54 @@
+# Ignore .git directory
+.git
+
+# Ignore virtual environment
+.venv/
+venv/
+env/
+
+# Ignore Python cache directories
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore editor/IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore build artifacts
+dist/
+build/
+*.egg-info/
+.tox/
+
+# Ignore test related files
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+tmp/
+
+# Ignore environment variables file
+.env
+.env.example
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore screenshots
+*.png
+
+# Ignore Docs
+docs/
+
+# Ignore AI memory bank
+memory-bank/
+
+# Ignore Data
+central-memory-data/

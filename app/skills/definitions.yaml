@@ -1,0 +1,66 @@
+tools:
+  - name: "read_full_memory"
+    description: "Membaca dan mengembalikan seluruh konten dari sebuah file memori. Gunakan ini jika Anda memerlukan konteks lengkap dari sebuah dokumen untuk menjawab pertanyaan pengguna."
+    input_schema:
+      type: "object"
+      properties:
+        directory_name:
+          type: "string"
+          description: "Nama direktori tempat memori berada. Contoh: 'hotel_general_info'."
+        file_name:
+          type: "string"
+          description: "Nama file memori yang akan dibaca. Contoh: 'check_in_procedures.md'."
+      required: ["directory_name", "file_name"]
+
+  - name: "search_memory_by_keyword"
+    description: "Mencari kata kunci spesifik di dalam sebuah file memori dan mengembalikan hanya baris yang mengandung kata kunci tersebut. Sangat berguna untuk menemukan informasi spesifik tanpa membaca seluruh file."
+    input_schema:
+      type: "object"
+      properties:
+        directory_name:
+          type: "string"
+          description: "Nama direktori tempat memori berada."
+        file_name:
+          type: "string"
+          description: "Nama file memori untuk pencarian."
+        keyword:
+          type: "string"
+          description: "Kata kunci yang ingin dicari di dalam file."
+      required: ["directory_name", "file_name", "keyword"]
+
+  - name: create_ticket
+    description: create a service ticket for guest issues
+    parameters:
+      type: object
+      properties:
+        message:
+          type: string
+          description: guest issue description
+      required: [message]
+
+  - name: list_tickets
+    description: list all service tickets
+    parameters:
+      type: object
+      properties: {}
+
+  - name: get_ticket
+    description: get ticket detail by id
+    parameters:
+      type: object
+      properties:
+        ticket_id:
+          type: integer
+      required: [ticket_id]
+
+  - name: done_ticket
+    description: mark a service ticket as done
+    parameters:
+      type: object
+      properties:
+        ticket_id:
+          type: integer
+          description: ticket id to mark as done
+      required:
+        - ticket_id
+
